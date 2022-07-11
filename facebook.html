@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.17.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        .roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #left-bar-scrool::-webkit-scrollbar {
+            width: 5px;
+            opacity: 0;
+        }
+
+        #left-bar-scrool::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        #left-bar-scrool::-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            background: rgba(255, 255, 255, .4);
+        }
+
+        #left-bar-scrool::-webkit-scrollbar-track {
+            border-radius: 50px;
+        }
+
+        #left-bar-scrool::-webkit-scrollbar {
+            display: none;
+        }
+
+        #left-bar-scrool:hover::-webkit-scrollbar {
+            display: block;
+        }
+    </style>
+    <style>
+
+    </style>
+</head>
+
+<body class="m-auto">
+    <div class="flex bg-gray-800 p-2 justify-between  sticky top-0 z-10">
+        <div class="flex items-center basis-1/4">
+            <div class="mx-4">
+                <i class="fa fa-facebook rounded-full bg-blue-600 px-3 py-2 align-middle text-white"></i>
+            </div>
+            <div
+                class="input-group items-center rounded-full border-2 border-gray-600 bg-gray-700 hover:border-blue-500">
+                <i class="fa fa-search pl-3 text-white"></i>
+                <div class="rounded-full">
+                    <input type="text" class="input-sm bg-inherit focus:outline-none" placeholder="Cari di facebook" />
+                </div>
+            </div>
+        </div>
+
+        <div class="flex basis-1/2 justify-evenly items-center ">
+            <div class="border-b-2 border-blue-600 px-4 rounded-t-lg  py-2 cursor-pointer hover:bg-slate-700 ">
+                <i class="text-xl fa fa-home text-blue-600 cursor-pointer "></i>
+            </div>
+            <div class="px-4 rounded-t-lg  py-2 cursor-pointer hover:bg-slate-700 ease-in duration-75">
+                <i class="text-xl fa fa-play"></i>
+            </div>
+            <div class="px-4 rounded-t-lg  py-2 cursor-pointer hover:bg-slate-700 ease-in duration-75">
+                <i class="text-xl fa fa-building"></i>
+            </div>
+            <div class="px-4 rounded-t-lg  py-2 cursor-pointer hover:bg-slate-700 ease-in duration-75">
+                <i class="text-xl fa fa-users"></i>
+            </div>
+            <div class="px-4 rounded-t-lg  py-2 cursor-pointer hover:bg-slate-700 ease-in duration-75">
+                <i class="text-xl fa fa-steam"></i>
+            </div>
+        </div>
+
+        <div class="mx-2 flex mt-1  items-center justify-end basis-1/4">
+            <div
+                class="px-3  py-2 cursor-pointer hover:bg-slate-700 bg-gray-700 rounded-full mx-1 hover:bg-slate-600 ease-in duration-75">
+                <i class="text-xl fa fa-th"></i>
+            </div>
+            <div
+                class="px-3  py-2 cursor-pointer hover:bg-slate-700 bg-gray-700 rounded-full mx-1 hover:bg-slate-600 ease-in duration-75">
+                <i class="text-xl fa fa-comment"></i>
+            </div>
+            <div
+                class="px-3  py-2 cursor-pointer hover:bg-slate-700 bg-gray-700 rounded-full mx-1 hover:bg-slate-600 ease-in duration-75">
+                <i class="text-xl fa fa-bell"></i>
+            </div>
+            <div class="cursor-pointer mx-1 self-end hover:brightness-110">
+                <img src="https://placeimg.com/40/40/animals" class="rounded-full ">
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between p-2  m-auto">
+        <div class="basis-72 overflow-y-auto max-h-[90vh] sticky top-20 " id="left-bar-scrool">
+
+            <div class="border-b-2 border-gray-700 ">
+                <ul class="menu">
+                    <li class="-mt-2">
+                        <a>
+                            <img src="https://placeimg.com/28/28/animals" class="rounded-full ">
+                            <small class="normal-case self-center text-right  font-semibold text-sm">
+                                Bambang Sutisno
+                            </small>
+                        </a>
+                    </li>
+
+                    <li class="-mt-2">
+                        <a>
+                            <div class="bg-gradient-to-br from-green-700 to-blue-700 rounded-full px-2 py-1">
+                                <i class="text-sm fa fa-user-circle-o   basis-80  to-blue-700  justify-self-center"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="normal-case self-center font-semibold text-sm justify-self-center">
+                                Teman
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="-mt-2">
+                        <a>
+                            <div class="bg-gradient-to-br from-green-700 to-blue-700 rounded-full px-2 py-1">
+                                <i class="text-sm fa fa-users  text-sm basis-80  justify-self-center"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="normal-case self-center font-semibold text-sm justify-self-center">
+                                Grup
+                            </div>
+                        </a>
+                    </li>
+                    <li class="-mt-2">
+                        <a>
+                            <div class="bg-gradient-to-br from-green-700 to-blue-700 rounded-full px-2 py-1">
+                                <i class="text-sm fa fa-building  text-sm basis-80  justify-self-center"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="normal-case self-center font-semibold text-sm justify-self-center">
+                                Marketplace
+                            </div>
+                        </a>
+                    </li>
+                    <li class="-mt-2">
+                        <a>
+                            <div class="bg-gradient-to-br from-green-700 to-blue-700 rounded-full px-2 py-1">
+                                <i class="text-sm fa fa-video-camera  text-sm basis-80  justify-self-center"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="normal-case self-center font-semibold text-sm justify-self-center">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li class="-mt-2">
+                        <a>
+                            <div class="bg-gradient-to-br from-green-700 to-blue-700 rounded-full px-2 py-1">
+                                <i class="text-sm fa fa-calendar-o  text-sm basis-80  justify-self-center"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="normal-case self-center font-semibold text-sm justify-self-center">
+                                Kenangan
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="flex px-4 my-2 mb-4 items-center">
+                    <div class="bg-gray-700 px-2 py-1 rounded-full">
+                        <i class="text-sm fa fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="normal-case font-semibold ml-2 text-sm">
+                        Lihat lainya
+                    </div>
+                </div>
+            </div>
+            <div class="border-b-2 border-gray-700">
+                <ul class="menu">
+                    <li class="-mt-2">
+                        <a>
+                            <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t31.18172-1/11741261_111281569215668_8902468445085057533_o.jpg?stp=c26.0.86.86a_cp0_dst-jpg_p86x86&_nc_cat=107&ccb=1-7&_nc_sid=dbb9e7&_nc_eui2=AeHBgEl9Cx5xGAqnrTE7rOnmWfVswP_wJI9Z9WzA__Akj9A9jvSz3F9BNOama2qQTYyJX-eQjxYiSfl9SFywhz0z&_nc_ohc=rpOpJt6OU6UAX_gkawM&tn=pBzPubCerI81vbQx&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT_X5nAEF3GY5Gsb5ZjsfjaWwcKEIxLwFVfh8s6xIGbAfg&oe=62F0735A"
+                                class="rounded-full " width="28">
+                            <small class="normal-case self-center text-right  font-semibold text-sm">
+                                Masive Gallery
+                            </small>
+                        </a>
+                    </li>
+                    <li class="-mt-2">
+                        <a>
+                            <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t1.18169-9/10410776_10152684727484844_8060394565148345812_n.jpg?stp=c86.0.64.64a_cp0_dst-jpg_p64x64&_nc_cat=108&ccb=1-7&_nc_sid=ac9ee4&_nc_eui2=AeFRJq6xKfb3XffTnUWoV2ihY2pCpdMiXktjakKl0yJeSz3cw18xuXgkjhTOp70zxIhm2rWSaEPBUOMSi60FcgRG&_nc_ohc=pMlmAUBai5oAX_uMxrA&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT-PhtAmSFIKZKPq96fb9HE088lP2Avu0-rUbhXYRsSW-Q&oe=62F1DD50"
+                                class="rounded-full " width="28">
+                            <small class="normal-case self-center text-right  font-semibold text-sm">
+                                Laravel Indonesia
+                            </small>
+                        </a>
+                    </li>
+                    <li class="-mt-2">
+                        <a>
+                            <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t39.30808-6/255439421_2071281306364676_4756561477835448216_n.jpg?stp=c0.7.64.64a_cp0_dst-jpg_p64x64&_nc_cat=1&ccb=1-7&_nc_sid=ac9ee4&_nc_eui2=AeHoSP5nlJgR8URTNaZDvncmei1OvXeg3Pt6LU69d6Dc-yGtqQ_eWbhAbXtm973TLai4JhnEZQlAPl_GHRA1gGbo&_nc_ohc=8TshMYXtYVUAX85tcZx&_nc_zt=23&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT8XHWxfeWZDbWs5gtpkRiSITTp1Vgpuwcg2KorBfrFRqA&oe=62D02C75"
+                                class="rounded-full " width="28">
+                            <small class="normal-case self-center font-semibold text-sm">
+                                A group where we all pretend to be cats ฅ^•ﻌ•^ฅ
+                            </small>
+                        </a>
+                    </li>
+                    <li class="-mt-2">
+                        <a>
+                            <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t39.30808-6/284251325_2040450486134242_5341358387807237043_n.jpg?stp=c25.0.64.64a_cp0_dst-jpg_p64x64&_nc_cat=108&ccb=1-7&_nc_sid=ac9ee4&_nc_eui2=AeFDG7fidCkN08c3F-jHHZW9uz_XJ2fvGUi7P9cnZ-8ZSGCwy4hMU3Ir5MyJ5ZerlIHI3Vuu8EserfGT4KuiiifL&_nc_ohc=F0x8nZq02wgAX9FI4up&_nc_zt=23&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT9ORh-8HEaizaztBodSOOLUoNN49bMXyb3Y9DEJzxoJHw&oe=62D02AFD"
+                                class="rounded-full " width="28">
+                            <small class="normal-case self-center font-semibold text-sm">
+                                APEX LEGENDS MOBILE INDONESIA
+                            </small>
+                        </a>
+                    </li>
+                </ul>
+                <div class="flex px-4 my-2 mb-4 items-center">
+                    <div class="bg-gray-700 px-2 py-1 rounded-full">
+                        <i class="text-sm fa fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="normal-case font-semibold ml-2 text-sm">
+                        Lihat lainya
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="basis-3/6">
+            <div class="w-[40rem] relative">
+                <div class="flex mx-auto justify-evenly text-white text-xs">
+                    <div class="rounded-lg overflow-hidden relative  hover:brightness-90 ">
+                        <img src="https://placeimg.com/111/198/animals" class="hover:scale-105 ease-in duration-200">
+                        <div class="absolute bottom-0 bg-gray-700 w-full text-center  font-semibold p-3">
+                            <i class="fa fa-plus-circle absolute -top-5 left-10 bg-gray-700 px-2 py-1 text-lg  rounded-full"
+                                aria-hidden="true"></i>
+                            Buat Cerita
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative hover:brightness-90 duration-200">
+                        <img src="https://placeimg.com/111/198/arch" class="hover:scale-105 ease-in duration-200">
+                        <div class="absolute top-0 p-2">
+                            <img src="https://placeimg.com/40/40/people" class="rounded-full p-1 bg-blue-500">
+                        </div>
+                        <div class="absolute bottom-0 p-2 font-semibold">
+                            Irvan Sulivan
+                        </div>
+
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative hover:brightness-90 duration-200">
+                        <img src="https://placeimg.com/111/198/sepia" class="hover:scale-105 ease-in duration-200">
+                        <div class="absolute top-0 p-2">
+                            <img src="https://placeimg.com/40/40/tech" class="rounded-full p-1 bg-blue-500">
+                        </div>
+                        <div class="absolute bottom-0 p-2 font-semibold">
+                            Eko supriyonta new
+                        </div>
+
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative hover:brightness-90 duration-200">
+                        <img src="https://placeimg.com/111/198/tech" class="hover:scale-105 ease-in duration-200">
+                        <div class="absolute top-0 p-2">
+                            <img src="https://placeimg.com/40/40/animals" class="rounded-full p-1 bg-blue-500">
+                        </div>
+                        <div class="absolute bottom-0 p-2 font-semibold">
+                            Yandi Nurdin
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative hover:brightness-90 duration-200">
+                        <img src="https://placeimg.com/111/198/any" class="hover:scale-105 ease-in duration-200">
+                        <div class="absolute top-0 p-2">
+                            <img src="https://placeimg.com/40/40/animals" class="rounded-full p-1 bg-blue-500">
+                        </div>
+                        <div class="absolute bottom-0 p-2 font-semibold">
+                            Faisal muhammad iqbal
+                        </div>
+                    </div>
+                </div>
+                <div class="self-center">
+                    <i class="fa fa-arrow-right text-xl px-2 py-1 absolute top-[5rem] right-0 rounded-full bg-gray-600 -ml-3 cursor-pointer hover:bg-gray-500 duration-100 ease-out"
+                        aria-hidden="true"></i>
+                </div>
+                <section class="mx-10 my-5">
+                    <div class="p-5 my-4 rounded-lg bg-gray-700">
+                        <div class="flex items-center border-b-2 border-gray-600 pb-4">
+                            <div class="basis-12 text-center">
+                                <img src="https://placeimg.com/40/40/any" class="rounded-full">
+                            </div>
+                            <div class="flex-auto">
+                                <input type="text" class="input rounded-full w-full"
+                                    placeholder="Apa yang anda pikirkan, Bambang ?">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 justify-items-center   pt-3">
+                            <div class="flex items-center">
+                                <i class="fa text-xl fa-video-camera text-red-500 " aria-hidden="true"></i>
+                                <small class="ml-2"> Video siaran langsung </small>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa text-xl fa-picture-o text-green-500" aria-hidden="true"></i>
+                                <small class="ml-2">Foto / Video </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 my-4 rounded-lg bg-gray-700">
+                        <div class="flex items-center">
+                            <div class="">
+                                <div class="border-blue-700 rounded-full border-2 px-2 py-1 text-sm">
+                                    <div class="mb-1">
+                                        <i class="fa fa-video-camera mx-1" aria-hidden="true"></i>
+                                        <span class="font-semibold text-blue-500 mx-1">Buat Forum</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-auto ml-4">
+                                <div class="flex justify-evenly">
+                                    <div class="relative">
+                                        <i class="fa fa-circle absolute text-[0.6rem] bottom-0 right-0 text-green-500"
+                                            aria-hidden="true"></i>
+                                        <img src="https://placeimg.com/40/40/arch" class="rounded-full">
+                                    </div>
+
+                                    <div class="relative">
+                                        <i class="fa fa-circle absolute text-[0.6rem] bottom-0 right-0 text-green-500"
+                                            aria-hidden="true"></i>
+                                        <img src="https://placeimg.com/40/40/animals" class="rounded-full">
+                                    </div>
+
+                                    <div class="relative">
+                                        <i class="fa fa-circle absolute text-[0.6rem] bottom-0 right-0 text-green-500"
+                                            aria-hidden="true"></i>
+                                        <img src="https://placeimg.com/40/40/sepia" class="rounded-full">
+                                    </div>
+
+                                    <div class="relative">
+                                        <i class="fa fa-circle absolute text-[0.6rem] bottom-0 right-0 text-green-500"
+                                            aria-hidden="true"></i>
+                                        <img src="https://placeimg.com/40/40/girl" class="rounded-full">
+                                    </div>
+
+                                    <div class="relative">
+                                        <i class="fa fa-circle absolute text-[0.6rem] bottom-0 right-0 text-green-500"
+                                            aria-hidden="true"></i>
+                                        <img src="https://placeimg.com/40/40/animals" class="rounded-full">
+                                    </div>
+
+                                    <div class="relative">
+                                        <i class="fa fa-circle absolute text-[0.6rem] bottom-0 right-0 text-green-500"
+                                            aria-hidden="true"></i>
+                                        <img src="https://placeimg.com/40/40/any" class="rounded-full">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-4 bg-gray-700 rounded-lg">
+                        <div class="flex p-3 items-center" id="konten-kucing-header-wrapper">
+                            <div class="relative basis-14">
+                                <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t39.30808-6/291943950_3354029028250534_8424787496133717262_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF-0X8PjQqHjuQpZOpU5MIPtQXSrtjeFhK1BdKu2N4WEjNpvMLMeg3ibjVC3BrWbD4vzh7xnOhLVzHG7kAt7hk9&_nc_ohc=FjbJIs9ecfwAX9JFO5Y&_nc_zt=23&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT8dqwWpxPeNw1Z8ScTDkdWI17L38GrB3cF7bu77bsKSRQ&oe=62CC8B16"
+                                    alt="" class="rounded-md " height="36" width="36">
+                                <img src="https://placeimg.com/24/24/any"
+                                    class="rounded-full absolute bottom-0 right-2 border-gray-700 border-2">
+                            </div>
+                            <div>
+                                <a href="#" class="font-semibold  text-white block">
+                                    A group where we all pretend to be cats ฅ^•ﻌ•^ฅ
+                                </a>
+                                <a href="#" class="text-sm">
+                                    Michael Cheng · 4 Juli pukul 23.36 <i class="fa fa-globe text-sm"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="basis-20">
+                                <div class="grid">
+                                    <div class="justify-self-end">
+                                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="grid grid-cols-2 overflow-hidden h-64">
+                                <div>
+                                    <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t39.30808-6/291869658_3354029738250463_8161378060410236826_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEfLrAtuEMOeeMrlnPrSn1UTkWij8AseGhORaKPwCx4aCInRb_33KsCXsHr5MxeCM4P_pvqNC8yVzLOmRVkU10h&_nc_ohc=T-YEaVO1GMgAX-7eKgE&_nc_zt=23&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT8dybiGHv74Y9TFJQxhiMhRMo1yOQ7rvxsXZXLgR8K0vw&oe=62D03C14"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t39.30808-6/291943950_3354029028250534_8424787496133717262_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF-0X8PjQqHjuQpZOpU5MIPtQXSrtjeFhK1BdKu2N4WEjNpvMLMeg3ibjVC3BrWbD4vzh7xnOhLVzHG7kAt7hk9&_nc_ohc=FjbJIs9ecfwAX-REjYr&_nc_zt=23&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT9sU5Kp0E16AM6FsFiNKtPs3bgNkgN08L3KItudLzlerw&oe=62CE8556"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 overflow-hidden h-48">
+                                <div>
+                                    <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t39.30808-6/291506484_3354029031583867_721598076970061137_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGxJjSX4CvAopqHtUI0FhrF86QxqHsnNpzzpDGoeyc2nGLwkEsIXlYYBJNgTBAsThvjUsNXaQPba5k5b63z2AF2&_nc_ohc=k_D2O0TupCwAX8yK8JB&_nc_zt=23&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT-So1r-x-nyqYcX9QsMd_iasiLDJ9Vbn_NQL04BNwdYPA&oe=62CFA926"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t39.30808-6/291645160_3354029071583863_6303941212535949146_n.jpg?stp=dst-jpg_p720x720&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGM1wi6tV37hkPtwAhCMQ2gAX36UIyK5Q4BffpQjIrlDhGl8oOzOjYb0Y2azK-xnyO7TauRdi8qkW0KWgoIZ05b&_nc_ohc=Jh_m0qsxcyIAX_XhNZu&_nc_zt=23&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT-DwsTOaFPT_n97JCF3RY2CRoJnKrBGKezvVsHbHX-ycQ&oe=62D018EE"
+                                        alt="">
+                                </div>
+                                <div class="relative  h-48">
+                                    <div class="absolute  text-white z-10 inset-y-20 inset-x-16	">
+                                        <span class="text-3xl font-semibold">+ 9</span>
+                                    </div>
+                                    <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t39.30808-6/291563544_3354029051583865_482480746527590352_n.jpg?stp=dst-jpg_p720x720&_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEiTK-rGnDbqTiRsBXHMmcJYmTEBoIpvf1iZMQGgim9_QjMAH8C-md-DOM9FW9kdcM7JYUXHlhlSc420cNLCrgv&_nc_ohc=NEyzYpFBa6oAX_AZiIB&_nc_zt=23&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT-z-ToB-RscGJkx4OQhz4ELD73EDAKjnqZlRzFQuWYO9w&oe=62D045B2"
+                                        class="brightness-50">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-5">
+                            <div class="border-x-2 border-b-2 rounded-b-lg border-gray-600 p-3">
+                                <a href="#">
+                                    Ghibli Community
+                                </a>
+                                <div class="text-xs">
+                                    <a href="#" class="text-white font-semibold">
+                                        Halaman Penggemar
+                                    </a>
+                                    ·
+                                    3 Juli Puku 00.00 · <i class="fa fa-globe" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 items-center">
+                                <div class="py-3 flex items-center">
+                                    <div>
+                                        <img class="outline outline-gray-700 outline-2 rounded-full cursor-pointer"
+                                            src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23FF6680'/%3e%3cstop offset='100%25' stop-color='%23E61739'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.710144928 0 0 0 0 0 0 0 0 0 0.117780134 0 0 0 0.349786932 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 100 16A8 8 0 008 0z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M10.473 4C8.275 4 8 5.824 8 5.824S7.726 4 5.528 4c-2.114 0-2.73 2.222-2.472 3.41C3.736 10.55 8 12.75 8 12.75s4.265-2.2 4.945-5.34c.257-1.188-.36-3.41-2.472-3.41'/%3e%3c/g%3e%3c/svg%3e"
+                                            alt="" width="18">
+                                    </div>
+                                    <div>
+                                        <img width="18"
+                                            class="outline outline-gray-700 outline-2 rounded-full cursor-pointer"
+                                            src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                            alt="">
+                                    </div>
+                                    <div>
+                                        <img width="18"
+                                            class="outline outline-gray-700 outline-2 rounded-full cursor-pointer"
+                                            src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='10.25%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23FEEA70'/%3e%3cstop offset='100%25' stop-color='%23F69B30'/%3e%3c/linearGradient%3e%3clinearGradient id='d' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23472315'/%3e%3cstop offset='100%25' stop-color='%238B3A0E'/%3e%3c/linearGradient%3e%3clinearGradient id='e' x1='50%25' x2='50%25' y1='0%25' y2='81.902%25'%3e%3cstop offset='0%25' stop-color='%23FC607C'/%3e%3cstop offset='100%25' stop-color='%23D91F3A'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.921365489 0 0 0 0 0.460682745 0 0 0 0 0 0 0 0 0.35 0'/%3e%3c/filter%3e%3cpath id='b' d='M16 8A8 8 0 110 8a8 8 0 0116 0'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='url(%23d)' d='M3 8.008C3 10.023 4.006 14 8 14c3.993 0 5-3.977 5-5.992C13 7.849 11.39 7 8 7c-3.39 0-5 .849-5 1.008'/%3e%3cpath fill='url(%23e)' d='M4.541 12.5c.804.995 1.907 1.5 3.469 1.5 1.563 0 2.655-.505 3.459-1.5-.551-.588-1.599-1.5-3.459-1.5s-2.917.912-3.469 1.5'/%3e%3cpath fill='%232A3755' d='M6.213 4.144c.263.188.502.455.41.788-.071.254-.194.369-.422.371-.78.011-1.708.255-2.506.612-.065.029-.197.088-.332.085-.124-.003-.251-.058-.327-.237-.067-.157-.073-.388.276-.598.545-.33 1.257-.48 1.909-.604a7.077 7.077 0 00-1.315-.768c-.427-.194-.38-.457-.323-.6.127-.317.609-.196 1.078.026a9 9 0 011.552.925zm3.577 0a8.953 8.953 0 011.55-.925c.47-.222.95-.343 1.078-.026.057.143.104.406-.323.6a7.029 7.029 0 00-1.313.768c.65.123 1.363.274 1.907.604.349.21.342.44.276.598-.077.18-.203.234-.327.237-.135.003-.267-.056-.332-.085-.797-.357-1.725-.6-2.504-.612-.228-.002-.351-.117-.422-.37-.091-.333.147-.6.41-.788z'/%3e%3c/g%3e%3c/svg%3e"
+                                            alt="">
+                                    </div>
+                                    <div class="ml-2">1.4Rb</div>
+                                </div>
+                                <div class="justify-self-end">
+                                    <div class="flex gap-2 text-sm text-gray-300">
+                                        <div>
+                                            53 Komentar
+                                        </div>
+                                        <div>
+                                            378 Kali dibagikan
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-y-2 py-2 border-gray-600">
+                                <div class="flex justify-around">
+                                    <div> <i class="fa fa-thumbs-up" aria-hidden="true"></i> Suka </div>
+                                    <div> <i class="fa fa-comment-o" aria-hidden="true"></i> Komentari </div>
+                                    <div> <i class="fa fa-share" aria-hidden="true"></i> Bagikan</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center py-3">
+                                <div class="basis-10">
+                                    <img src="https://placeimg.com/32/32/any" class="rounded-full">
+                                </div>
+                                <div class="flex-1">
+                                    <input type="text" class="input-sm bg-gray-600 rounded-l-full w-full"
+                                        placeholder="Tulis komentar publik">
+                                </div>
+                                <div class="basis-32 bg-gray-600 p-2 rounded-r-full">
+                                    <div class="flex justify-between mr-2">
+                                        <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                        <i class="fa fa-camera" aria-hidden="true"></i>
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flex ">
+                                <div class="basis-10">
+                                    <img src="https://placeimg.com/32/32/arch" class="rounded-full">
+                                </div>
+                                <div>
+                                    <div class="grid grid-cols-1 mx-2">
+                                        <div>
+                                            <div class="text-sm pb-3 font-semibold text-white">Kepin Menolak Mandi</div>
+                                        </div>
+                                        <div>
+                                            <div class="overflow-hidden rounded-lg ">
+                                                <img src="https://scontent.fcgk11-1.fna.fbcdn.net/v/t39.30808-6/291363389_461353595804318_2888480804062042369_n.jpg?stp=dst-jpg_s851x315&_nc_cat=106&ccb=1-7&_nc_sid=dbeb18&_nc_eui2=AeE6kiVld_n-sz8DuGRAcfbp8V9eh6ZEzGDxX16HpkTMYNk5JGYKxmiJJRbeK3AOjiICiF21cK-yQvYQQHGdIvXz&_nc_ohc=5waVlZDZfNoAX-BhSmD&tn=pBzPubCerI81vbQx&_nc_zt=23&_nc_ht=scontent.fcgk11-1.fna&oh=00_AT9o3gsonNEogVObeLQ3P8qzHegkQvVQjVH-pTBZrMOZrw&oe=62D085E7"
+                                                    alt="" width="143">
+                                            </div>
+                                        </div>
+                                        <div class="flex p-1 justify-between text-xs font-semibold">
+                                            <div>Suka</div>
+                                            <div>Balas</div>
+                                            <div>Bagikan</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="basis-72 ">
+            <div class="sticky top-20">
+                <div class="border-b-2 border-gray-600 my-2  ">
+                    <span class="font-bold">Ulang Tahun</span>
+                    <div class="flex items-center my-2">
+                        <div class="basis-1/6 text-center">
+                            <i class="fa fa-gift text-[1.5rem] bg-gradient-to-br from-blue-500 to-red-300 bg-clip-text text-transparent"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div class="ml-3">
+                            <strong>Suryanti</strong> dan <strong>Ilham</strong> berulang tahun hari ini
+                        </div>
+                    </div>
+                </div>
+
+                <div class="font-bold">
+                    <div class="grid grid-cols-2">
+                        <div>
+                            Kontak
+                        </div>
+                        <div class="flex justify-evenly">
+                            <div>
+                                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="flex my-4 justify-start align-center">
+                            <div class="relative basis-[2.5rem]">
+                                <img src="https://placeimg.com/28/28/any" class="rounded-full">
+                                <i class="fa fa-circle text-[0.5rem] absolute text-green-700 right-3 bottom-0 outline outline-2 rounded-full outline-gray-700 outline-offset-0     "
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="ml-2">
+                                Irvan Sulivan
+                            </div>
+                        </div>
+                        <div class="flex my-4 justify-start">
+                            <div class="relative basis-[2.5rem] ">
+                                <img src="https://placeimg.com/28/28/girl"
+                                    class="rounded-full outline outline-2 outline-blue-700 outline-offset-0">
+                                <i class="fa fa-circle text-[0.5rem] absolute text-green-700 right-3 bottom-0 outline outline-2 rounded-full outline-gray-700 outline-offset-0 "
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="ml-2">
+                                Faisal Muhammad Iqbal
+                            </div>
+                        </div>
+                        <div class="flex my-4 justify-start">
+                            <div class="relative basis-[2.5rem]">
+                                <img src="https://placeimg.com/28/28/man"
+                                    class="rounded-full outline outline-2 outline-blue-700 outline-offset-0">
+                                <div c></div>
+                                <div
+                                    class="text-green-600 text-[0.6rem] px-1 rounded-full bg-gray-700 absolute -bottom-2 -left-2  ">
+                                    29 menit
+                                </div>
+                            </div>
+                            <div class="ml-2">
+                                Fahmi syauki
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
